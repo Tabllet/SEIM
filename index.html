@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+   <title>iKioskZSŁ</title>
+   <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var users=new Array
+(
+  new Array('admin','admin'),   
+  new Array('user2','password2'),
+  new Array('user3','password3'),     
+);
+
+function CheckPassword(form) {
+        var user=form.user.value.toLowerCase();;
+        var pass=form.pass.value;
+
+        for (var i=0; i<users.length; i++)
+                if (users[i][0]==user)
+                        if (users[i][1]==pass) {
+                                form.action="dostep1.php";
+                                return true;
+                        } else {
+                                alert("Sorki, " +user+ ", zle haslo.");
+                                return false;
+                        }
+        alert("Niewlasciwe dane!");
+        return false;
+}
+
+</script>
+       
+</head>
+ <body>
+<div class="p1">
+        
+        <div id="panel">
+            <div id="panel2">
+           <form method="post" onsubmit="return CheckPassword(this)">
+                <label for="img"><a href="http://www.zsl.gda.pl/"><img class="ll1" src="images/full_logo.svg" ></a></label>
+                <label for="img"><a href="http://www.zsl.gda.pl/"><img class="ll2" src="logoSEIW.png" ></a></label>
+                <label for="username">Nazwa użytkownika:</label>
+                <input name="user" type="text" id="username" >
+                <label for="password">Hasło:</label>
+                <input name="pass" type="password" id="password" >
+                    <div id="lower">
+                <input input type="submit" value="Zaloguj" />
+                </div>
+            </form>
+            </div>
+        </div>
+      
+     </div>       
+           
+</body>
+
+</html>	

@@ -1,0 +1,129 @@
+body
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("index.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    display: block;
+}
+
+img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) ;
+    animation: zoom-out 3s linear infinite;
+}
+.p1{
+    z-index: 6;
+    position: static;
+    
+    
+    margin-left: 15%;    
+}
+#panel {
+    width: 400px; 
+    height: 500px;
+	
+	
+	
+	
+	 
+    z-index: 4;
+    
+    position: absolute;
+    
+}
+#panel2{
+
+    top: 60%;
+    width: 400px; 
+    height: 500px;
+	margin: 0 auto; 
+	padding: 0; 
+	background: #222636;
+	border: 0px solid #222636;
+	font: 16px calibri;
+	letter-spacing: -1px;
+	padding: 10px 0px 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    z-index: 4;
+    border-radius: 8px;
+    position: absolute;  
+}
+.form {margin: 10px}
+label {
+	display: grid;
+    top: 150px;
+	padding: 10px 20px;
+	color: whitesmoke;
+	font-size: 16px;
+	text-shadow: 0 0 1px silver;
+    position: relative; 
+    
+    
+}
+#username, #password {
+	font-size: 22px;
+    position: relative;
+    top: 150px;
+	display: block;
+	width: 360px; 
+	margin: 0 auto;
+	padding: 10px 5px;
+	border: 1px solid silver;
+	outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    
+}
+#username:focus, #password:focus {
+	outline: none;
+    position: relative; 
+      z-index: 2;
+}
+#lower {
+	background: #222636;
+	width: 360px;
+    top: 200px;
+	padding: 15px 20px;
+	margin-top: 20px;
+    position: relative; 
+      z-index: 2;
+    border-radius: 11px;
+}
+
+input[type="submit"] {
+	width: 100px;
+	padding: 5px 13px;
+	border: 1px solid red;
+	color: white;
+	text-shadow: 0 0 1px black;
+	background: red;
+	position: relative;
+    left: 70%;
+    border-radius: 5px;
+    
+}
+
+.ll2{
+    resize: both; 
+    top:  -60px;
+    max-width: 250px;
+    
+            
+}
+
+.ll1{
+    z-index: 5;
+    top: -305px ;
+    max-width: 350px;
+ 
+    
+}

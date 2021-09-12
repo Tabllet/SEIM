@@ -1,0 +1,58 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: #F6F6F6;
+    background-image: url("indexcz2.png");
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+}
+
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #222636;
+  overflow: auto;
+position: relative; z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: right;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  vertical-align: text-top;
+  position: relative; z-index: 2;
+    font-size: 19px;
+    
+}
+
+/* Navbar links on mouse-over */
+.navbar a: hover {
+  background-color: #000;
+    position: relative; z-index: 2;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: red;
+    position: relative; z-index: 2;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: flex;
+      position: relative; 
+      z-index: 2;
+      
+  }
+}
+
+
